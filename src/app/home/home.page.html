@@ -1,12 +1,23 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content padding scrollX="false" scrollY="false" class="bg-style">
+  <img src="../../assets/logo.png">
+  <p></p>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Aplicativo para controle de aulas</ion-card-title>
+      <ion-card-subtitle>Veja suas aulas, confirme presença, consulte os dados da instituição.</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" [routerLink]="'/login'" routerDirection="forward">Acessar com E-mail</ion-button>
+    <ion-button expand="full" (click)="entrarFacebook()" style="color: '#4e69a'">
+      <ion-icon name="logo-facebook"></ion-icon> Facebook
+    </ion-button>
+    <ion-button expand="full" color="danger" (click)="entrarGoogle()">
+      <ion-icon name="logo-google"></ion-icon> Google
+    </ion-button>
+    <ion-label style="text-align: center; font-size: .8em;">Não tem cadastro? Clique <a [routerLink]="'/cadastro'" routerDirection="forward">aqui</a></ion-label>
+  </ion-toolbar>
+</ion-footer>

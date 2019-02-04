@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="'/home'" routerDirection="back">Voltar</ion-button>
+      </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label position="floating" autofocus="true">E-mail</ion-label>
+    <ion-input type="email" required="true"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Confirmar E-mail</ion-label>
+    <ion-input type="email" required="true"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nome Completo</ion-label>
+    <ion-input required="true"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Data de Nascimento</ion-label>
+    <ion-datetime required="true" month-names="Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro"
+      display-format="DD/MM/YYYY" picker-format="DD MMMM YYYY" doneText="OK" cancelText="Cancelar"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Celular</ion-label>
+    <ion-input type="number" pattern="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input type="number" pattern="tel"></ion-input>
+  </ion-item>
+  <ion-button expand="block">Cadastrar</ion-button>
+
+</ion-content>

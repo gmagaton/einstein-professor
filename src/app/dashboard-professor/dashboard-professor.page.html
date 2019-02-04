@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="'/home'" routerDirection="back">Sair</ion-button>
+    </ion-buttons>
+    <ion-title>Selecione uma opção</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding scrollX="false" scrollY="false">
+
+  <ion-card [routerLink]="'/aula-lista'" routerDirection="forward">
+    <ion-card-header>
+      <ion-card-title>Minhas Aulas</ion-card-title>
+      <ion-card-subtitle>Veja aqui suas aulas</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card [routerLink]="'/pagamento-lista'" routerDirection="forward">
+    <ion-card-header>
+      <ion-card-title>Meus Pagamentos</ion-card-title>
+      <ion-card-subtitle>Aqui você consulta seus pagamentos</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card [routerLink]="'/lembrete-lista'" routerDirection="forward">
+    <ion-card-header>
+      <ion-card-title>Meus Lembretes</ion-card-title>
+      <ion-card-subtitle>Não esqueça o dia das suas aulas</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
